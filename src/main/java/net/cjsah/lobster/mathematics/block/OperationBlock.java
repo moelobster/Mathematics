@@ -23,13 +23,15 @@ import org.jetbrains.annotations.NotNull;
 
 public class OperationBlock extends Block implements SimpleWaterloggedBlock {
 
+    public String OPERATOR ;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     private static final VoxelShape Z_AABB = Block.box(3.0, 3.0, 6.0, 13.0, 13.0, 10.0);
     private static final VoxelShape X_AABB = Block.box(6.0, 3.0, 3.0, 10.0, 13.0, 13.0);
 
-    public OperationBlock(Properties properties) {
+    public OperationBlock(Properties properties,String operator) {
         super(properties);
+        this.OPERATOR = operator;
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }
 

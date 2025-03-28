@@ -27,9 +27,12 @@ public class NumberBlock extends Block implements SimpleWaterloggedBlock {
     private static final VoxelShape Z_AABB = Block.box(3.0, 0.0, 6.0, 13.0, 16.0, 10.0);
     private static final VoxelShape X_AABB = Block.box(6.0, 0.0, 3.0, 10.0, 16.0, 13.0);
 
+    public Integer number;
 
-    public NumberBlock(Properties properties) {
+
+    public NumberBlock(Properties properties,int number) {
         super(properties);
+        this.number = number;
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }
 
