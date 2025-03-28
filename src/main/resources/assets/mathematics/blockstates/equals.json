@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mathematics:block/equals"
+    },
+    "facing=east": {
+      "model": "mathematics:block/equals",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mathematics:block/equals",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mathematics:block/equals",
+      "y": 270
+    }
+  }
+}
