@@ -21,14 +21,14 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-public class NumberBlock extends Block implements SimpleWaterloggedBlock {
+public class OperationBlock extends Block implements SimpleWaterloggedBlock {
+
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-    private static final VoxelShape Z_AABB = Block.box(3.0, 0.0, 6.0, 13.0, 16.0, 10.0);
-    private static final VoxelShape X_AABB = Block.box(6.0, 0.0, 3.0, 10.0, 16.0, 13.0);
+    private static final VoxelShape Z_AABB = Block.box(3.0, 3.0, 6.0, 13.0, 13.0, 10.0);
+    private static final VoxelShape X_AABB = Block.box(6.0, 3.0, 3.0, 10.0, 13.0, 13.0);
 
-
-    public NumberBlock(Properties properties) {
+    public OperationBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }

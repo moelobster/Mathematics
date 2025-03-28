@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mathematics:block/nine"
+    },
+    "facing=east": {
+      "model": "mathematics:block/nine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mathematics:block/nine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mathematics:block/nine",
+      "y": 270
+    }
+  }
+}
