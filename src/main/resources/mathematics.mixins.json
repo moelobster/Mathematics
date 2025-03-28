@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.cjsah.lobster.mathematics.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mathematics.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
